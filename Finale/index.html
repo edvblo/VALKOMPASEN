@@ -99,6 +99,7 @@
           </button>
           <a
             class="sidebar-link"
+            data-view="how"
             href="#sa-fungerar-det"
             aria-label="Så fungerar det"
             title="Så fungerar det"
@@ -117,106 +118,103 @@
       ></button>
 
       <main id="top" class="app-main">
-        <section id="startView" class="start-view">
-          <section id="howView" class="how-view" hidden>
-            <div class="how-content">
-              <p class="how-kicker">GUIDE TILL VALKOMPANJONEN</p>
-              <h1>Så fungerar det</h1>
-              <p class="how-intro">
-                Valkompanjonen hjälper dig att utforska politik på ditt eget
-                sätt. Här kan du diskutera frågor med AI, skapa en personlig
-                politisk karta, undersöka partier och jämföra argument.
-              </p>
+        <section id="howView" class="how-view" hidden>
+          <div class="how-content">
+            <p class="how-kicker">GUIDE TILL VALKOMPANJONEN</p>
+            <h1>Så fungerar det</h1>
+            <p class="how-intro">
+              Valkompanjonen hjälper dig att utforska politik på ditt eget sätt.
+              Här kan du diskutera frågor med AI, skapa en personlig politisk
+              karta, undersöka partier och jämföra argument.
+            </p>
 
-              <div class="how-grid">
-                <article class="how-card">
-                  <span class="how-number">01 / DISKUTERA</span>
-                  <h2>Din AI-diskussion</h2>
-                  <p>
-                    Här kan du ställa frågor om politiska ämnen med egna ord. Du
-                    kan be om förklaringar, jämförelser och exempel.
-                  </p>
-                  <h3>Så gör du</h3>
-                  <ol>
-                    <li>Skriv en fråga i chattrutan.</li>
-                    <li>Läs AI-svaret och utforska eventuella källor.</li>
-                    <li>Ställ följdfrågor för att fördjupa diskussionen.</li>
-                  </ol>
-                  <button type="button" data-how-view="home">
-                    Öppna AI-diskussionen →
-                  </button>
-                </article>
-
-                <article class="how-card">
-                  <span class="how-number">02 / UTFORSKA</span>
-                  <h2>Politisk karta</h2>
-                  <p>
-                    Skapa en visuell överblick över politiska frågor och fundera
-                    över vilka områden som är viktigast för dig.
-                  </p>
-                  <h3>Så gör du</h3>
-                  <ol>
-                    <li>Utforska ämnena i kartan.</li>
-                    <li>Lägg till egna områden och underämnen.</li>
-                    <li>Rangordna frågor och jämför olika perspektiv.</li>
-                  </ol>
-                  <button type="button" data-how-view="mindmap">
-                    Öppna politisk karta →
-                  </button>
-                </article>
-
-                <article class="how-card">
-                  <span class="how-number">03 / UNDERSÖK</span>
-                  <h2>Valstugor</h2>
-                  <p>
-                    Utforska hur olika partier resonerar kring politiska frågor
-                    genom att välja vilket parti du vill undersöka.
-                  </p>
-                  <h3>Så gör du</h3>
-                  <ol>
-                    <li>Välj ett politiskt parti.</li>
-                    <li>Ställ frågor om dess politik.</li>
-                    <li>Byt parti för att jämföra olika perspektiv.</li>
-                  </ol>
-                  <button type="button" data-how-view="party">
-                    Öppna valstugorna →
-                  </button>
-                </article>
-
-                <article class="how-card">
-                  <span class="how-number">04 / JÄMFÖR</span>
-                  <h2>Debatt</h2>
-                  <p>
-                    Undersök argument för olika politiska ståndpunkter. Syftet
-                    är att förstå varför människor och partier kan resonera
-                    olika i samma fråga.
-                  </p>
-                  <h3>Så gör du</h3>
-                  <ol>
-                    <li>Välj eller skriv en politisk fråga.</li>
-                    <li>Ta del av argument och motargument.</li>
-                    <li>
-                      Fundera över vilka resonemang du tycker är starkast.
-                    </li>
-                  </ol>
-                  <button type="button" data-how-view="debate">
-                    Öppna debatt →
-                  </button>
-                </article>
-              </div>
-
-              <div class="how-note">
-                <strong>Kom ihåg</strong>
+            <div class="how-grid">
+              <article class="how-card">
+                <span class="how-number">01 / DISKUTERA</span>
+                <h2>Din AI-diskussion</h2>
                 <p>
-                  AI-genererade svar kan innehålla fel eller förenklingar.
-                  Kontrollera viktiga uppgifter mot tillförlitliga källor.
-                  Valkompanjonen är ett verktyg för att utforska politik, inte
-                  en ersättning för att bilda sig en egen uppfattning.
+                  Här kan du ställa frågor om politiska ämnen med egna ord. Du
+                  kan be om förklaringar, jämförelser och exempel.
                 </p>
-              </div>
-            </div>
-          </section>
+                <h3>Så gör du</h3>
+                <ol>
+                  <li>Skriv en fråga i chattrutan.</li>
+                  <li>Läs AI-svaret och utforska eventuella källor.</li>
+                  <li>Ställ följdfrågor för att fördjupa diskussionen.</li>
+                </ol>
+                <button type="button" data-how-view="home">
+                  Öppna AI-diskussionen →
+                </button>
+              </article>
 
+              <article class="how-card">
+                <span class="how-number">02 / UTFORSKA</span>
+                <h2>Politisk karta</h2>
+                <p>
+                  Skapa en visuell överblick över politiska frågor och fundera
+                  över vilka områden som är viktigast för dig.
+                </p>
+                <h3>Så gör du</h3>
+                <ol>
+                  <li>Utforska ämnena i kartan.</li>
+                  <li>Lägg till egna områden och underämnen.</li>
+                  <li>Rangordna frågor och jämför olika perspektiv.</li>
+                </ol>
+                <button type="button" data-how-view="mindmap">
+                  Öppna politisk karta →
+                </button>
+              </article>
+
+              <article class="how-card">
+                <span class="how-number">03 / UNDERSÖK</span>
+                <h2>Valstugor</h2>
+                <p>
+                  Utforska hur olika partier resonerar kring politiska frågor
+                  genom att välja vilket parti du vill undersöka.
+                </p>
+                <h3>Så gör du</h3>
+                <ol>
+                  <li>Välj ett politiskt parti.</li>
+                  <li>Ställ frågor om dess politik.</li>
+                  <li>Byt parti för att jämföra olika perspektiv.</li>
+                </ol>
+                <button type="button" data-how-view="party">
+                  Öppna valstugorna →
+                </button>
+              </article>
+
+              <article class="how-card">
+                <span class="how-number">04 / JÄMFÖR</span>
+                <h2>Debatt</h2>
+                <p>
+                  Undersök argument för olika politiska ståndpunkter. Syftet är
+                  att förstå varför människor och partier kan resonera olika i
+                  samma fråga.
+                </p>
+                <h3>Så gör du</h3>
+                <ol>
+                  <li>Välj eller skriv en politisk fråga.</li>
+                  <li>Ta del av argument och motargument.</li>
+                  <li>Fundera över vilka resonemang du tycker är starkast.</li>
+                </ol>
+                <button type="button" data-how-view="debate">
+                  Öppna debatt →
+                </button>
+              </article>
+            </div>
+
+            <div class="how-note">
+              <strong>Kom ihåg</strong>
+              <p>
+                AI-genererade svar kan innehålla fel eller förenklingar.
+                Kontrollera viktiga uppgifter mot tillförlitliga källor.
+                Valkompanjonen är ett verktyg för att utforska politik, inte en
+                ersättning för att bilda sig en egen uppfattning.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="startView" class="start-view">
           <div class="start-content">
             <p class="start-kicker">VÄLKOMMEN TILL VALKOMPANJONEN</p>
 

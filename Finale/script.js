@@ -5006,10 +5006,8 @@ function askQuestion(question) {
     newConversationButton.hidden = false;
     window.scrollTo(0, 0);
     questionInput.placeholder = "Ställ en följdfråga...";
-    if (
-      mobileNavigation.matches &&
-      !partyRail.classList.contains("is-collapsed")
-    ) {
+
+    if (!partyRail.classList.contains("is-collapsed")) {
       setPartyRailCollapsed(true);
     }
   }
