@@ -6502,3 +6502,196 @@ body,
 #siteShell:has(#sourcesPanel:not([hidden])) #siteMenu {
   z-index: 1 !important;
 }
+
+/* =========================================
+   POLITISK KARTA – VITT OCH LILA TEMA
+   Sparade chattar + Lägg till noder
+   ========================================= */
+
+/* Gemensamma färger */
+#siteShell.mindmap-mode #mindmapPage .my-map-workspace {
+  --map-beige: #eee8fa;
+  --map-brown: #52347a;
+}
+
+/* Kartans knappar */
+#mindmapPage .my-map-switch {
+  background: #eee8fa;
+}
+
+#mindmapPage .my-map-switch button {
+  color: #52347a;
+}
+
+#mindmapPage .my-map-switch button[aria-pressed="true"] {
+  background: #52347a;
+  color: white;
+}
+
+#mindmapPage .my-map-add-toggle {
+  background: #52347a;
+  color: white;
+}
+
+#mindmapPage .my-map-add-toggle:hover {
+  background: #7353a0;
+}
+
+/* LÄGG TILL NODER – hela sidopanelen */
+#mindmapPage #myMapEditor {
+  background: #f8f6fc;
+  color: #321b50;
+  border: 1px solid #e1d6f0;
+}
+
+#mindmapPage #myMapEditor .my-map-editor-header h2,
+#mindmapPage #myMapEditor .my-map-subject-picker h3,
+#mindmapPage #myMapEditor .my-map-ranking h3,
+#mindmapPage #myMapEditor .my-map-ranking header p,
+#mindmapPage #myMapEditor .my-map-message,
+#mindmapPage #myMapEditor .my-map-rank-number,
+#mindmapPage #myMapEditor .my-map-rank-name,
+#mindmapPage #myMapEditor .my-map-drag-handle {
+  color: #321b50;
+}
+
+/* Stäng- och tillbaka-knappar */
+#mindmapPage #myMapEditor .my-map-editor-close,
+#mindmapPage #myMapEditor .my-map-editor-back {
+  background: #eee8fa;
+  color: #52347a;
+  border-color: #d8c8ee;
+}
+
+/* Ämnesknappar */
+#mindmapPage .my-map-subject-choices button {
+  background: #ffffff;
+  color: #503477;
+  border-color: #e1d6f0;
+}
+
+#mindmapPage .my-map-subject-choices button:hover:not(:disabled) {
+  background: #eee8fa;
+  border-color: #9473bd;
+}
+
+#mindmapPage .my-map-subject-choices button.is-added {
+  background: #ded2f0;
+  color: #321b50;
+  border-color: #9473bd;
+}
+
+/* Fält och knapp för egen nod */
+#mindmapPage .my-map-custom-form input {
+  background: #ffffff;
+  color: #321b50;
+  border-color: #d8c8ee;
+}
+
+#mindmapPage .my-map-custom-form button,
+#mindmapPage .my-map-open-ranking {
+  background: #52347a;
+  color: #ffffff;
+  border-color: #52347a;
+}
+
+#mindmapPage .my-map-custom-form button:hover,
+#mindmapPage .my-map-open-ranking:hover {
+  background: #7353a0;
+  color: #ffffff;
+}
+
+/* Rangordning */
+#mindmapPage .my-map-ranking {
+  background: #eee8fa;
+}
+
+#mindmapPage .my-map-ranking-item {
+  border-top-color: #d8c8ee;
+}
+
+#mindmapPage .my-map-rank-actions button {
+  color: #52347a;
+  border-color: #c7b5df;
+  background: #ffffff;
+}
+
+#mindmapPage .my-map-rank-actions button:hover:not(:disabled) {
+  background: #ded2f0;
+  color: #321b50;
+}
+
+#mindmapPage .my-map-ranking-item.is-drop-before::before,
+#mindmapPage .my-map-ranking-item.is-drop-after::after {
+  background: #7353a0;
+}
+
+/* SPARADE CHATTAR – panelens bakgrund */
+#mindmapPage #myMapSavedPanel {
+  background: #f8f6fc;
+  color: #321b50;
+  border: 1px solid #e1d6f0;
+}
+
+#mindmapPage #myMapSavedPanel h2,
+#mindmapPage #myMapSavedPanel .my-map-editor-close {
+  color: #321b50;
+}
+
+#mindmapPage #myMapSavedPanel > .my-map-editor-header::after {
+  background: #d8c8ee;
+}
+
+/* Sparade meddelandekort */
+#mindmapPage #myMapSavedPanel .mindmap-liked-entry {
+  background: #eee8fa;
+  border: 1px solid #d8c8ee;
+}
+
+#mindmapPage #myMapSavedPanel .mindmap-liked-entry-header strong,
+#mindmapPage #myMapSavedPanel .mindmap-liked-entry p,
+#mindmapPage #myMapSavedPanel .mindmap-liked-entry a,
+#mindmapPage #myMapSavedPanel .mindmap-liked-entry .my-map-example-label,
+#mindmapPage #myMapSavedPanel .my-map-example-heart,
+#mindmapPage #myMapSavedPanel .mindmap-liked-remove {
+  color: #321b50;
+}
+
+#mindmapPage #myMapSavedPanel .mindmap-liked-remove:hover {
+  color: #7353a0;
+}
+
+#mindmapPage #myMapSavedPanel .mindmap-liked-empty,
+#mindmapPage #myMapSavedPanel .my-map-saved-example-note {
+  color: #70647d;
+}
+
+/* Scrollfält */
+#mindmapPage .my-map-saved-scroll,
+#mindmapPage .my-map-subject-choices,
+#mindmapPage .my-map-ranking-list {
+  scrollbar-color: #bba6d7 #f8f6fc;
+}
+
+/* Tydlig tangentbordsmarkering */
+#mindmapPage .my-map-workspace button:focus-visible,
+#mindmapPage .my-map-custom-form input:focus-visible {
+  outline-color: #7353a0;
+}
+
+/* Politisk karta – Visa alla noder */
+#myMapShowAll,
+#mapShowAll,
+#partyMapShowAll {
+  background: #eee8fa !important;
+  background-color: #eee8fa !important;
+  color: #52347a !important;
+  border: 1px solid #d8c8ee !important;
+}
+
+#myMapShowAll:hover,
+#mapShowAll:hover,
+#partyMapShowAll:hover {
+  background: #ded2f0 !important;
+  border-color: #9473bd !important;
+}
